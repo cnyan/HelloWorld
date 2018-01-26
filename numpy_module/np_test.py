@@ -122,9 +122,46 @@ print('\n')
 print(arr[[3,4,0,6]])
 
 
-print('\n数组的组合')
+print('\n数组的组合a:')
 #数组的组合
 a = np.arange(9).reshape(3,3)
 print(a)
+
+print("矩阵的乘法b:")
+b = a * 2
+print(b)
+
+print('矩阵的水平组合')
+print(np.hstack((a,b)))
+
+print('矩阵的垂直组合')
+print(np.vstack((a,b)))
+
+print('矩阵的另一种水平组合')
+print(np.concatenate((a,b),axis=0))
+
+print('矩阵的深度组合')
+print(np.dstack((a,b)))
+
+print('矩阵的列行组合')
+print(np.column_stack(([0,1],[0,2])))
+
+print('矩阵的行组合')
+print(np.row_stack(([0,1],[0,2])))
+
+print()
+#数组的分割
+split_arr = np.arange(9).reshape(3,3)
+print(split_arr)
+
+print('垂直分割')
+print(np.vsplit(a,3))
+
+print('水平分割')
+print(np.hsplit(a,3))
+
+
+
+
 
 
