@@ -32,6 +32,10 @@ end_time = datetime.now()
 print('时间差:',(end_time-start_time).microseconds)
 
 
+# 最小维度
+a = np.array([1,  2,  3,4,5], ndmin = 4)
+print(a)
+
 
 #numpy 数组
 a = np.arange(5)
